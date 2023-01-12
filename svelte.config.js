@@ -12,7 +12,13 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			envPrefix: "APP_",
+		}),
+	},
+	prerender: {
+		crawl: false,
+		entries: [],
 	},
 };
 
